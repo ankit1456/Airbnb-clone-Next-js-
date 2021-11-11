@@ -59,15 +59,15 @@ const Header = (props) => {
         <input
           type='text'
           placeholder={props.placeholder || "Start your search"}
-          className='flex-grow pl-5 text-sm text-gray-600 bg-transparent focus:outline-none'
+          className='flex-grow pl-5 text-sm text-gray-600 placeholder-transparent bg-transparent md:placeholder-gray-400 focus:outline-none'
           value={searchInput}
           onChange={(e) => setSearchInput(e.target.value)}
         />
-        <SearchIcon className='hidden h-8 p-2 text-white bg-red-400 rounded-full md:inline-flex md:mx-2 ' />
+        <SearchIcon className='hidden h-8 p-2 text-white bg-red-400 rounded-full md:inline-flex md:mx-2' />
       </div>
       <div className='flex items-center justify-end space-x-4 text-gray-600 cursor-pointer'>
         <p className='hidden font-semibold lg:inline'>Become a host</p>
-        <FiGlobe size={20} />
+        <FiGlobe size={20} className='hidden sm:inline-block' />
 
         <div className='flex items-center p-1.5 shadow-sm space-x-2 border-2 rounded-full'>
           <MenuIcon className='h-6' />

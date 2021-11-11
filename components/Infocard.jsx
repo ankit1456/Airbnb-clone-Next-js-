@@ -4,8 +4,8 @@ import { StarIcon } from "@heroicons/react/solid";
 
 const Infocard = ({ item }) => {
   return (
-    <div className='flex px-2 pr-4 transition duration-200 ease-out transform border-b cursor-pointer py-7 hover:opacity-80 hover:shadow-lg'>
-      <div className='relative flex-shrink-0 w-40 h-24 overflow-hidden rounded-2xl md:h-52 md:w-80 first:border-t'>
+    <div className='flex flex-col px-2 pr-4 transition duration-200 ease-out transform border-b cursor-pointer md:flex-row py-7 hover:opacity-90 hover:shadow-lg'>
+      <div className='relative flex-shrink-0 w-full mb-4 overflow-hidden md:mb-0 h-52 sm:h-60 rounded-2xl md:h-52 md:w-80 first:border-t'>
         <Image layout='fill' src={item.img} objectFit='cover' />
       </div>
 
